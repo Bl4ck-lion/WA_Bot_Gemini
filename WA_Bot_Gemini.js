@@ -90,9 +90,9 @@ Kamu juga dapat memberikan rekomendasi buku atau website belajar sesuai bidang y
             const text = await response.text();
 
             // Reply to the user on WhatsApp
-            msg.reply(`CS:\n${text}`);
+            msg.reply(`\n${text}`);
         } catch (error) {
-            console.error('Terjadi kesalahan dalam respons CS:', error);
+            console.error('Terjadi kesalahan dalam respons ', error);
             msg.reply('Maaf, terjadi kesalahan saat memproses permintaan. Sepertinya API Key belum terpasang');
         }
     }
